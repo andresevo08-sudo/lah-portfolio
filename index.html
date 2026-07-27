@@ -271,18 +271,6 @@
   <tbody id="rows"></tbody>
 </table>
 
-<footer>
-  <strong>How this works.</strong>
-  <ul>
-    <li>Live prices come from Finnhub's free /quote endpoint. You provide an API key once (stored in your browser's localStorage, never sent anywhere except Finnhub).</li>
-    <li>Refreshes every <strong>30 seconds during US market hours</strong> (9:30 AM – 4:00 PM ET, Mon–Fri), every <strong>5 minutes when closed</strong>. US holidays not detected — the page will keep refreshing on those days but prices won't change.</li>
-    <li>Cost basis (shares × trade price) is hardcoded from the PDF. If you add/remove positions or change cost basis, edit the <code>POSITIONS</code> array in this file's source.</li>
-    <li>Free tier is 60 calls/min. With 14 tickers refreshing every 30s, that's 28 calls/min — well within the limit.</li>
-    <li>This is not a brokerage account view. Live P/L assumes the trade-price column is your true cost basis. Doesn't account for dividends, fees, or splits.</li>
-    <li><strong>Need a key?</strong> Sign up free at <a href="https://finnhub.io/register" target="_blank" rel="noopener">finnhub.io/register</a> — takes 30 seconds, no credit card.</li>
-  </ul>
-</footer>
-
 </div>
 
 <!-- Settings modal -->
